@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produtos - Kantovitz Garage</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <a href="index.html">
+        <img src="IMAGENS/logotipo.jpg" alt="Kantovitz Garage" class="logo">
+    </a>
+
+    <button id="btn-menu">☰</button>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="carrinho.html"> Carrinho (<span id="contador-carrinho">0</span>)</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <h1 style="text-align:center; margin: 30px 0 10px;">Produtos</h1>
+    <p style="text-align:center; color:#ccc; margin-bottom: 10px;">Confira nossos produtos.</p>
+
+    <div class="lista-produtos" id="lista-produtos">
+        <!-- Os produtos são inseridos aqui dinamicamente via JavaScript (js/produtos.js) -->
+    </div>
+
+</main>
+
+
+<script src="js/script.js"></script>
+<script src="js/produtos.js"></script>
+
+</body>
+</html>

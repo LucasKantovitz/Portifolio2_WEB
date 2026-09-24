@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* CABEÇALHO */
+
+header {
+    height: 140px;
+    background-color: #181818;
+    border-bottom: 2px solid red;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 30px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* BOTÃO MENU */
+
+#btn-menu {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-color: red;
+    color: white;
+
+    border: none;
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+/* MENU */
+
+nav {
+    display: none;
+
+    position: absolute;
+    top: 115px;
+    right: 30px;
+
+    background-color: #222;
+    border: 1px solid red;
+
+    width: 140px;
+
+    z-index: 10;
+}
+
+nav.ativo {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: red;
+}
+
+/* CONTEÚDO */
+
+main {
+    padding: 40px 25px;
+}
+
+/* SOBRE */
+
+#sobre {
+    background-color: #292929;
+
+    padding: 40px;
+
+    border-radius: 6px;
+
+    margin-bottom: 50px;
+}
+
+#sobre h2 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+#sobre h3 {
+    color: red;
+    margin: 20px 0 10px;
+}
+
+#sobre ul {
+    margin-left: 25px;
+}
+
+/* PRODUTOS */
+
+#destaques {
+    text-align: center;
+}
+
+#destaques h2 {
+    margin-bottom: 30px;
+}
+
+#destaques article {
+    display: inline-block;
+
+    width: 280px;
+
+    margin: 10px;
+
+    vertical-align: top;
+
+    background-color: #292929;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+#destaques article img {
+    display: block;
+
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+}
+
+#destaques article h3 {
+    padding: 15px 10px 5px;
+}
+
+#destaques article p {
+    padding: 5px 15px;
+}
+
+#destaques article p:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header {
+        height: 120px;
+        padding: 15px 25px;
+    }
+
+    .logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    nav {
+        top: 95px;
+        right: 25px;
+    }
+
+    #destaques article {
+        width: 90%;
+        max-width: 300px;
+    }
+}
