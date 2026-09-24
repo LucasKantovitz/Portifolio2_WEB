@@ -10,8 +10,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* CABEÇALHO */
-
 header {
     height: 140px;
     background-color: #181818;
@@ -31,10 +29,8 @@ header {
     border-radius: 50%;
 }
 
-/* BOTÃO MENU */
-
 #btn-menu {
-    display: block;
+    display: none;
     width: 50px;
     height: 50px;
 
@@ -47,29 +43,13 @@ header {
     cursor: pointer;
 }
 
-/* MENU */
-
 nav {
-    display: none;
-
-    position: absolute;
-    top: 115px;
-    right: 30px;
-
-    background-color: #222;
-    border: 1px solid red;
-
-    width: 140px;
-
-    z-index: 10;
-}
-
-nav.ativo {
     display: block;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
 }
 
 nav li {
@@ -89,13 +69,9 @@ nav a:hover {
     background-color: red;
 }
 
-/* CONTEÚDO */
-
 main {
     padding: 40px 25px;
 }
-
-/* SOBRE */
 
 #sobre {
     background-color: #292929;
@@ -120,8 +96,6 @@ main {
 #sobre ul {
     margin-left: 25px;
 }
-
-/* PRODUTOS */
 
 #destaques {
     text-align: center;
@@ -169,8 +143,6 @@ main {
     font-weight: bold;
 }
 
-/* CELULAR */
-
 @media (max-width: 700px) {
 
     header {
@@ -183,9 +155,31 @@ main {
         height: 75px;
     }
 
+    #btn-menu {
+        display: block;
+    }
+
     nav {
+        display: none;
+
+        position: absolute;
         top: 95px;
         right: 25px;
+
+        background-color: #222;
+        border: 1px solid red;
+
+        width: 140px;
+
+        z-index: 10;
+    }
+
+    nav.ativo {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
     }
 
     #destaques article {
